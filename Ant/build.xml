@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<project name="Hello World Project" default="runPython">
+   
+   <!-- Tarea para ejecutar el script Python con argumento -->
+   <target name="runPython">
+      <echo>Ejecutando el script Python con argumento 3...</echo>
+      
+      <!-- Comando para ejecutar Python con el argumento 3 -->
+      <exec executable="python3">
+         <arg value="main.py"/>
+         <arg value="3"/>
+      </exec>
+   </target>
+   
+   <!-- Tarea por defecto -->
+   <target name="info">
+      <echo>Hello World - Welcome to Apache Ant!</echo>
+   </target>
+
+</project>
